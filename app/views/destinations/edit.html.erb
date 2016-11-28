@@ -1,0 +1,23 @@
+<div class="header">
+  <div class="container">
+    <!--
+    <img src="http://to_whatever_website/image_filename.jpg" width="80">
+    -->
+     
+    <%= image_tag "bucket_logo.png" %>
+    <h1>Bucklist Travel</h1>
+  </div>
+</div>
+
+<div class="destination">
+  <div class="container">
+    <%= image_tag @destination.image %>
+
+    <%= form_for(@destination) do |f| %>
+      <%= f.text_field :name %>
+      <%= f.text_field :description %>
+      <%= f.submit "Update", :class => "btn" %>
+    <% end %> 
+    
+  </div>
+</div> 

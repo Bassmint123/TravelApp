@@ -1,0 +1,23 @@
+<div class="header">
+  <div class="container">
+    <!--
+    <img src="http://to_whatever_website/image_filename.jpg" width="80">
+    -->
+     
+    <%= image_tag "bucket_logo.png" %>
+    <h1>Bucklist Travel</h1>
+  </div>
+</div>
+
+<div class="destination">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= image_tag @destination.image %>
+        <h2><%= @destination.name %></h2>
+        <p><%= @destination.description %></p>
+        <%= link_to "Edit", edit_destination_path(@destination) %>
+      </div>
+    </div>
+  </div>
+</div>
